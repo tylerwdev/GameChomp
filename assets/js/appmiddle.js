@@ -1,21 +1,10 @@
+function changeName(name){
 
-var queryURLGames= "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games";
-var queryURLGenres= "";
-var queryURLCovers= "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/covers";
-var queryURLFeeds=  "";
+var 
+
+}
 
 
-$.ajax({
-    url: queryURLGames,
-    method: "POST",
-    headers: {
-      "user-key": "d6a65b1a245c294e5c6aad8ed4c649c1",
-    },
-
-    data: 
-    "fields cover, genres, name, storyline,summary, total_rating, videos; where total_rating>95; sort total_rating desc; limit 10;"
-    
-  })
    .then(function(response) {
     console.log(response)
 
@@ -50,3 +39,18 @@ $.ajax({
   
 }
   
+
+function changeName(name){
+
+
+      var replaced = name.toLowerCase()
+      replaced = replaced.split(' ').join('-');
+      var urlWalkthrough = "https://www.ign.com/games/" + replaced;
+      $(".walkthrough").html("<h3>" + urlWalkthrough +"</h3");
+    
+
+    }
+ 
+    
+
+    
