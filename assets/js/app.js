@@ -1,4 +1,5 @@
 
+
 var queryURLGames= "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games";
 var queryURLGenres= "";
 var queryURLCovers= "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/covers";
