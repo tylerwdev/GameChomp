@@ -1,8 +1,28 @@
 body {
     background: black;
-    color:rgb(2, 195, 253);
+    color:git aliceblue;
 }
 
-h1{
-    color: #ffa704;
+.navbar{
+    background: black;
+    /* color: #fca10d; */
+    border: solid .25rem #11d3f5;
+    border-radius: 1rem;
+    margin: 2rem;
+    
+}
+
+.container {
+    background: black;
+    max-width: 60%;
+    margin: 2rem;
+
+}
+
+.card {
+    background: black;
+    border: solid .25rem  #11d3f5;;
+    border-radius: 1rem;
+    margin: 2rem;
+
 }
