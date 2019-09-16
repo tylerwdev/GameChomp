@@ -1,7 +1,4 @@
 
-var queryURLGames= "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games";
-
-
 function changeName(name){
 
 

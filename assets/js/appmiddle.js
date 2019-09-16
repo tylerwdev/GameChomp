@@ -1,56 +1,23 @@
-function changeName(name){
 
-var 
-
-}
+// "fields cover, genres, name, storyline,summary, total_rating, videos; where total_rating>95; sort total_rating desc; limit 10;"
 
 
-   .then(function(response) {
-    console.log(response)
-
-    response.forEach(element => {
-      getCover(element.id, element.name)
-      changeName(element.name);
-    });
-  
-  })
-
-  function getCover(gameID, name){
-
-  $.ajax({
-    url: queryURLCovers,
-    method: "POST",
-    headers: {
-      "user-key": "d6a65b1a245c294e5c6aad8ed4c649c1",
-    },
-    data: 
-    "fields game, url; where game = " + gameID +";"
-  })
-  .then(function(response) {
-    console.log(response);
-    var image =$("<img>")
-    image.attr("src", "http:"+ response[0].url);
-    $(".containerOneGame").append(image);
-    $(".containerOneGame").append(name);
-
-    
-  })
-
-  
-}
-  
-
-function changeName(name){
-
-
-      var replaced = name.toLowerCase()
-      replaced = replaced.split(' ').join('-');
-      var urlWalkthrough = "https://www.ign.com/games/" + replaced;
-      $(".walkthrough").html("<h3>" + urlWalkthrough +"</h3");
-    
-
-    }
+function pullGameInfo(genre_name, platform_name, image, total_rating, storyline, summary, releaseDate){
+  image.click(function (){
+  $(".gameInfo").empty();
+  $(".gameInfo").append(total_rating);
+  $(".gameInfo").append(genre_name);
+  $(".gameInfo").append(platform_name)
+  $(".gameInfo").append(storyline);
+  $(".gameInfo").append(summary);
+  $(".gameInfo").append(releaseDate);
+  console.log(releaseDate)
  
-    
+})
+}
 
-    
+
+
+
+
+
