@@ -1,28 +1,45 @@
 body {
-    background: black;
-    color:git aliceblue;
+    max-width: 80%;
+    background: url("./assets/images/bg-nes-controller-bw.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+    text-align: center;
 }
 
 .navbar{
-    background: black;
-    /* color: #fca10d; */
     border: solid .25rem #11d3f5;
     border-radius: 1rem;
     margin: 2rem;
+    color: #11d3f5;
     
 }
 
+.header {
+    background-image: url("../assets/images/bg-nes-controller-bw.jpg")
+    /* opacity: .8; */
+}
+
 .container {
-    background: black;
-    max-width: 60%;
     margin: 2rem;
 
 }
 
 .card {
-    background: black;
+    background: #2c2f33;
     border: solid .25rem  #11d3f5;;
     border-radius: 1rem;
-    margin: 2rem;
+    margin: 1rem;
+
+}
+
+.cover-art-card {
+    
+}
+
+.nav {
+    color: #11d3f5;
+    padding: 1em;
 
 }
