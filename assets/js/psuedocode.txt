@@ -1,0 +1,28 @@
+//HTML 1
+    //Create header/title of app
+    //Link jQuery, CSS, Bootstrap if needed
+    //Create navbar/search input field??
+    //Create div in Grid system to push game cards into
+    //Create footer
+    //Link scripts
+//?? HTML2 (second page for clicked card??)
+ 
+
+//JavaScript
+    //Create event to run on page load
+        //Create API call to IGDB to scrub top 10 reated games and store in response
+        //Set variables to store values for top ten games on page, cover art, platform
+            //Create method to dynamically generate/append new cards to HTML div for each game/cover art
+        //Grab value of user input from search field    
+            //Run that value through the API, clear existing cards, and push that game response to be only card on the screen
+        //Add click event to all newly generated cards
+            //?? Once card is clicked, existing cards are removed(?), display clicked card in new screen/stand alone
+            //Once card is clicked, Gamespot API call runs to gather new response   
+                //Set variables to store values for game title, genre, platform, gamer and critic review score, news articles, walkthroughs
+            //Run Giphy API to pull entertaining gifs and append to new card
+                //Create method to dynamically generate card and append each value into 
+            //??Create second click event to return to landing page of top ten games; navbar Home link ??
+            
+            
+        //MPDs == Giphies, gameplay videos, walkthroughs
+  

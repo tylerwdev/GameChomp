@@ -1,3 +1,4 @@
+
 //IGDB calls 
 var queryURLGames = "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games";
 var queryURLGenres = "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/genres";
@@ -11,6 +12,7 @@ var unixCurrentTime =  Math.floor((Date.now()) / 1000);
 var queryTime = unixCurrentTime - unixOneYear
 //data: "fields cover.url, genres.name, name, first_release_date, storyline,summary, platforms.name, total_rating, videos; where total_rating > 95; "+"; sort total_rating desc; limit 10; where cover != null;"
 //calling IGDB for the game name
+
 $.ajax({
     url: queryURLGames,
     method: "POST",
