@@ -1,5 +1,5 @@
 
-var gameSpotURL = "https://cors-anywhere.herokuapp.com/http://www.gamespot.com/api/game/?api_key=ae89892595c24a1771b20007d69c34c8e57bc96a&format=json&limit=10&filter=publish_date:2018-01-01%7C2019-06-01&filter=name:doom&filter=articles_api_url:doom"
+var gameSpotURL = "https://cors-anywhere.herokuapp.com/http://www.gamespot.com/api/games/?api_key=ae89892595c24a1771b20007d69c34c8e57bc96a&format=json&limit=10&filter=publish_date:2018-01-01|2019-06-01,articles_api_url"
 
 $.ajax({
     url: gameSpotURL,
@@ -10,19 +10,22 @@ $.ajax({
     var results = response.results;
 
         for (let i = 0; i < results.length; i++) {
-            var articleDiv = $('<div>')
+            // var articleDiv = $('<div>')
 
-            var demo = results[i].title;
+            var demo = response.results[i].name;
+            $('#article').append(demo)
 
-            var p = $('<p>').text(demo);
 
-            articleDiv.append(p)
+            // var demo = results[i].deck;
 
-            $('#article').prepend(articleDiv);  
+            // var p = $('<p>').text(demo);
+
+            // articleDiv.append(p)
+
+            // $('#article').prepend(articleDiv);  
             
         }
 
     
 })
-
 
