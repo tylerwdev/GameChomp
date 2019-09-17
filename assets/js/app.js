@@ -1,3 +1,4 @@
+
 //IGDB calls 
 var queryURLGames = "https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/games";
 // unixOneYear is the seconds for 365 days
@@ -7,6 +8,7 @@ var unixCurrentTime =  Math.floor((Date.now()) / 1000);
 var queryTime = unixCurrentTime - unixOneYear
 
 //calling IGDB for the game name
+
 $.ajax({
     url: queryURLGames,
     method: "POST",

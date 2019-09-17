@@ -1,18 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Project-One</title>
-    
-    <link rel="stylesheet" href="../Project-One/assets/css/style.css">
-</head>
-<body>
-    <div class="containerTopTen">
-        <div class="containerOneGame">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Project-One/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- //Navbar with search field -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
         </div>
+      </nav>
+      <!-- //Title card, name of our app, maybe search form goes here? -->
+      <div class="header">
+        <div class="card bg-dark">
+          <h5 class="card-header">***Best eGame API ever***</h5>
+          <div class="card-body">
+            <h5 class="card-title">Top Ten Games YTD</h5>
+            <p class="card-text">
+              Top ten games are a ranked as a compilation of user review and
+              critic review scores.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <!-- //Main container to display top ten game cards-->
+        <!-- //Bootstrap grid to display 3 games inline, cover art pops with simple text to include review score and platform displayed underneath -->
+
+        <div class="row top-ten-display">
+          <!-- //Card specs can be copied into JS dynamic-generate function  -->
+          <div class="col-sm-4">
+            <div class="card cover-art-card bg-dark" style="width: 18rem;">
+              <img src="http://placehold.it/150x150"class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Game Review Score</p>
+                <p class="card-text">Platforms</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card cover-art-card bg-dark" style="width: 18rem;">
+              <img src="http://placehold.it/150x150" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Game Review Score</p>
+                <p class="card-text">Platforms</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card cover-art-card bg-dark" style="width: 18rem;">
+              <img src="http://placehold.it/150x150" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Game Review Score</p>
+                <p class="card-text">Platforms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //Once game card is clicked it will run the carousel display and zoom in on one game-card and display info, user can swipe to next game -->
+      <div class="container game-display-carousel">
+        <!-- //Game card with image cap, ULs to display review score, platform, genre, gifs, videos, article links,  walkthrough links -->
+        <!-- ////Card specs can be copied into JS dynamic-generate function -->
+        <div class="bd-example">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Game Review Score</h5>
+                  <p>
+                    Platforms
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Game Review Score</h5>
+                  <p>
+                    Platforms
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Game Review Score</h5>
+                  <p>
+                   Platforms
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="card bg-dark game-display-full" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Game title</h5>
+                          <p class="card-text">Review Score</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Genre</li>
+                          <li class="list-group-item">Platform</li>
+                          <li class="list-group-item">Gifs</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Articles</a>
+                          <a href="#" class="card-link">Gameplay Vids</a>
+                        </div>
+                      </div> -->
+      </div>
     </div>
+
+    <!-- //Footer with copyright and links to [???] -->
+    <ul class="nav nav-dark justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+          >Disabled</a
+        >
+      </li>
+    </ul>
 
 
     <div class="gameInfo">
@@ -22,6 +248,12 @@
     <div class="walkthrough"></div>
 
 
+
+    <!-- //Media breakpoints if needed @include media-breakpoint-down(xs) { ... }
+    @include media-breakpoint-down(sm) { ... } @include
+    media-breakpoint-down(md) { ... } @include media-breakpoint-down(lg) { ... }
+    // Example: Style from medium breakpoint and down @include
+    media-breakpoint-down(md) { .custom-class { display: block; } } -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../Project-One/assets/js/app.js"></script>
     <script src ="../Project-One/assets/js/appwalkthrough.js"></script>
@@ -29,3 +261,4 @@
     <script src="../Project-One/assets/js/appgiphy.js"></script>
 </body>
 </html>
+
