@@ -1,11 +1,24 @@
+.card-header {
+    display: flex;
+    justify-content: center;
+    border: .25rem solid #18CAE6;
+    background-color: rgba(24, 203, 230, 0.178);
+    border-radius: 1rem;
+    color: rgba(24, 203, 230);
+}
 
-body{
-    width: 100%;
-=======
 #article {
     display: flex;
     flex-direction: column;
+    border: .25rem solid #18CAE6;
+    background-color: rgba(24, 203, 230, 0.178);
+    border-radius: 1rem;
+    margin-top: 0.5%;
 }
+
+
+body{
+    width: 100%;
 
     background-color: black;
     background-image: url("../images/background.jpeg");
