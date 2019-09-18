@@ -20,7 +20,7 @@ function displayShowGifs(topTenName) {
       console.log(response)
       response.data.forEach(e => {
       
-        /*var prefixURL = "https://media.giphy.com/media/" + e.id + "/" */
+        var prefixURL = "https://media.giphy.com/media/" + e.id + "/" 
 
         var gifURL = prefixURL + stillURL;
 
@@ -32,14 +32,12 @@ function displayShowGifs(topTenName) {
         var datacard = $(`
         <div class="col-md-6 col-lg-4 mb-lg-3 mb-md-3 mb-sm-3">
         <div class="card ">
-            <img src="${gifURL}" class="card-img-top img-fluid" />
-            <div class="card-block">
-                <h3 class="card title">Game Title</h3>
-                <p>This is GAME CONTENT YO!</p>
+            <img src="${gifURL}" class="card-img-top img-fluid stop" />
+              <div class="card-block">
+            
             </div>
         </div>`) 
         $(".gifs-view").append(datacard);
-
       });
 
 
