@@ -1,50 +1,71 @@
+
+body{
+    width: 100%;
+=======
 #article {
     display: flex;
     flex-direction: column;
 }
 
-body {
-    max-width: 80%;
-    background: url("./assets/images/bg-nes-controller-bw.jpg");
     background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: aliceblue;
+    background-image: url("../images/background.jpeg");
+   
+    color: cyan;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+.jumbotron{
+    background-image: url("../images/background.jpeg");
     text-align: center;
+     
+   
 }
 
-.navbar{
-    border: solid .25rem #11d3f5;
-    border-radius: 1rem;
-    margin: 2rem;
-    color: #11d3f5;
-    
+.btn{
+    color: black;
 }
 
-.header {
-    background-image: url("../assets/images/bg-nes-controller-bw.jpg")
-    /* opacity: .8; */
+a{
+    color:cyan;
+    background-color: goldenrod, .5;
+    border-radius: 1em;
 }
+a:hover {
+    color: goldenrod;
+    text-decoration: none;
+  }
 
-.container {
-    margin: 2rem;
 
-}
+  
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
 
-.card {
-    background: #2c2f33;
-    border: solid .25rem  #11d3f5;;
-    border-radius: 1rem;
-    margin: 1rem;
+  .card{
+      background-color:black;
+  }
 
-}
+ 
 
-.cover-art-card {
-    
-}
+/*#article{
 
-.nav {
-    color: #11d3f5;
-    padding: 1em;
+text-emphasis: none; 
+text-align: right;
+background-color: rgb(22, 22, 22, .6);
+width: 50%;
 
-}
+}*/
+
+
+
+
+

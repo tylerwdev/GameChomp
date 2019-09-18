@@ -16,6 +16,7 @@ $.ajax({
     method: 'GET'
 }).then(function(response) {
     console.log(response);
+  
     var results = response.results;
         //4-for loop to pull through information from API
         for (let i = 0; i < results.length; i++) {
