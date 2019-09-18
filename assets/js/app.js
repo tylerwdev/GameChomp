@@ -15,7 +15,7 @@ $.ajax({
     headers: {
       "user-key": "6d738ccad4eec052f368a4959500b715",
     },
-    data: "fields cover.url, cover.height, genres.name, name, first_release_date, storyline,summary, platforms.name, total_rating, videos; sort total_rating desc; limit 10; where  total_rating_count>40 & cover != null & summary != null & genres != null & platforms != null & storyline != null & first_release_date != null &first_release_date>"+queryTime +";"
+    data: "fields cover.url, cover.height, genres.name, name, first_release_date, storyline,summary, platforms.name, total_rating, videos; sort total_rating desc; limit 8; where  total_rating_count>40 & cover != null & summary != null & genres != null & platforms != null & storyline != null & first_release_date != null &first_release_date>"+queryTime +";"
   })
 
   .then(function (response) {

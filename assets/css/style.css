@@ -5,6 +5,7 @@
     background-color: rgba(24, 203, 230, 0.178);
     border-radius: 1rem;
     color: rgba(24, 203, 230);
+    margin-top: 2%;
 }
 
 
@@ -17,13 +18,20 @@
     margin-top: 0.5%;
 }
 
+.nav-top {
+  border-bottom: .25rem solid  #18CAE6;
+  border-radius: 1rem;
+  margin-bottom: 2%;
+
+
+}
 
 
 body{
     width: 100%;
     background-color: black;
     background-image: url("../images/background.jpeg");
-    color: cyan;
+    color:  #18CAE6;
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -33,19 +41,29 @@ body{
     /* background-image: url("../images/background.jpeg"); */
     background-color: rgba(0, 255, 255, 0.178);
     text-align: center; 
-    font-size: 1 rem;
-    border: .25rem solid cyan;
+    font-size: 20rem;
+    border: .25rem solid  #18CAE6;
     border-radius: 1rem; 
 
    
 }
 
+.display-4 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 2rem;
+  font-weight: 300;
+}
 .btn{
     color: black;
 }
 
 a{
-    color:cyan;
+    color: #18CAE6;
     background-color: goldenrod, .5;
     border-radius: 1em;
 }
@@ -75,6 +93,14 @@ a:hover {
       width: 150px;
   }
 
+  .gameInfo {
+    border: .25rem solid  #18CAE6;
+    border-radius: 1rem;
+    padding: 1rem; 
+    display: inline-flex;
+    background-color:  rgba(24, 203, 230, 0.178);
+
+  }
 
   button, input, optgroup, select, textarea {
     margin: 0;
@@ -95,9 +121,13 @@ a:hover {
 
 
   .footer {
+    display: flex;
+    align-items: center;
     text-align: center;
-    border-top: .25rem solid cyan;
+    border-top: .25rem solid  #18CAE6;
     border-radius: 1rem;  
+    margin-top: 2%;
+
     
   }
 

@@ -2,9 +2,11 @@
 // "fields cover, genres, name, storyline,summary, total_rating, videos; where total_rating>95; sort total_rating desc; limit 10;"
 //If I move anything, I'll have to add a new empty method call with it. 
 
+$(".gameInfo").hide()
 
 function pullGameInfo(datacard, data){
   datacard.click(function (){
+    $(".gameInfo").show()
 
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
