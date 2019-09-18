@@ -7,6 +7,7 @@
     color: rgba(24, 203, 230);
 }
 
+
 #article {
     display: flex;
     flex-direction: column;
@@ -19,19 +20,22 @@
 
 body{
     width: 100%;
-
     background-color: black;
     background-image: url("../images/background.jpeg");
-   
     color: cyan;
     font-family: 'Share Tech Mono', monospace;
 }
 
 
+
 .jumbotron{
-    background-image: url("../images/background.jpeg");
-    text-align: center;
-     
+    /* background-image: url("../images/background.jpeg"); */
+    background-color: rgba(0, 255, 255, 0.178);
+    text-align: center; 
+    font-size: 1 rem;
+    border: .25rem solid cyan;
+    border-radius: 1rem; 
+
    
 }
 
@@ -67,6 +71,12 @@ a:hover {
       background-color:black;
   }
 
+  .footer {
+    text-align: center;
+    border-top: .25rem solid cyan;
+    border-radius: 1rem;  
+    
+  }
  
 
 /*#article{
