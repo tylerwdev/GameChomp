@@ -13,7 +13,7 @@ $.ajax({
     url: queryURLGames,
     method: "POST",
     headers: {
-      "user-key": "d6a65b1a245c294e5c6aad8ed4c649c1",
+      "user-key": "6d738ccad4eec052f368a4959500b715",
     },
     
 
@@ -59,37 +59,10 @@ function getCover(data) {
 
 $( document ).ready(function() {
 
-$( "div.button" ).click(function() {
-  $( "form#cse-search-box" ).submit();
-    return false;
-});
-    
-    
-});
-
-//TOAST FUNCTION
-
-$.toast({
-  text: "Don't forget to star the repository if you like it.", // Text that is to be shown in the toast
-  heading: 'Note', // Optional heading to be shown on the toast
-  icon: 'info', // Type of toast icon
-  showHideTransition: 'slide', // fade, slide or plain
-  allowToastClose: true, // Boolean value true or false
-  hideAfter: 3000, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
-  stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
-  position: 'top-right', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
+  $( "div.button" ).click(function() {
+    $( "form.gsc-search-box" ).submit();
+      return false;
+  });
   
   
-  
-  textAlign: 'center',  // Text alignment i.e. left, right or center
-  loader: true,  // Whether to show loader or not. True by default
-  loaderBg: '#000000',  // Background color of the toast loader
-  beforeShow: function () {}, // will be triggered before the toast is shown
-  afterShown: function () {}, // will be triggered after the toat has been shown
-  beforeHide: function () {}, // will be triggered before the toast gets hidden
-  afterHidden: function () {}  // will be triggered after the toast has been hidden
-});
-
-
-
-
+  });

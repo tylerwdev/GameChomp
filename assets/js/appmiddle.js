@@ -33,15 +33,6 @@ $(".gameInfo").append(addingGifs);
 displayShowGifs(data.name);
 
 
-
-
-//   console.log(data );
-    // var replaced = data.name.toLowerCase()
-    // replaced = replaced.split(' ').join('-');
-    // var urlWalkthrough = "https://www.ign.com/" + replaced;
-    // $(".walkthrough").html("<h3>" + urlWalkthrough +"</h3");
-  
-    // })
   })
 }
 
