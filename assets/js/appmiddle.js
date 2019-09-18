@@ -5,7 +5,7 @@
 
 function pullGameInfo(image, data){
   image.click(function (){
-
+console.log(pullGameInfo)
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
   var options = { year: 'numeric', month: 'long', day: 'numeric'};
@@ -13,14 +13,14 @@ function pullGameInfo(image, data){
 
   $(".gameInfo").empty();
   $(".gameInfo").append(data.total_rating);
-  // $(".gameInfo").append(data.genres[0].name);
+  $(".gameInfo").append(data.genres[0].name);
   $(".gameInfo").append(data.storyline);
   $(".gameInfo").append(data.summary);
   $(".gameInfo").append("Released " +longDate + ".");
 
   for (let i = 0; i < data.genres.length; i++) {
     $(".gameInfo").append(data.genres[i].name+ " ");
-    console.log(data.genres[i].name)
+    console.log("hola tacos")
   }
 
 
