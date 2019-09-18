@@ -8,10 +8,10 @@ body{
 }
 
 
+
 .jumbotron{
     /* background-image: url("../images/background.jpeg"); */
-    background-color: rgb(10, 10, 10, .5);
-    
+    background-color: rgba(0, 255, 255, 0.178);
     text-align: center; 
     font-size: 1 rem;
     border: .25rem solid cyan;
@@ -52,11 +52,11 @@ a:hover {
       background-color:black;
   }
 
-    .footer {
+  .footer {
     text-align: center;
-    width: 
-
-
+    border-top: .25rem solid cyan;
+    border-radius: 1rem;  
+    
   }
  
 
