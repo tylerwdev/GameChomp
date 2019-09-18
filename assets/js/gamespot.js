@@ -25,24 +25,21 @@ $.ajax({
 
             //6-pulls article url from results and puts it into set var
             var urlLink = response.results[i].site_detail_url;
+           
+            //7-taking the url from the API and splitting it to grab just the link itself and put it into a new var
+            var linkURL = urlLink.split('"')[0];
 
-            //7-creating a new variable that makes a div through jquery
-            var infoDiv = $("<div>")
+            //7-creating an anchor tag with jquery
+            var infoAnchor = $("<a>");
+            //taking the split API url and giving it an href attribute and putting it into infoAnchor
+            infoAnchor.attr('href', linkURL);
+            //giving infoAnchor an attribute of target/blank, making the link open in a new tab
+            infoAnchor.attr('target', '_blank');
+            //giving infoAnchor the text of the article title so the link is the article title
+            infoAnchor.text(articleTitle);
 
-            //8-this is where the classes from CSS go to style the article header/links on index
-            infoDiv.addClass("")
-
-            //9-this var is taking the articleTitle variable and connecting it to str...I think
-            var str = articleTitle
-
-            //10-turns the article url into str which is the article title
-            var urlClick = str.link(urlLink)
-
-            //11-takes the now string/article title/url and appends to the div infoDiv
-            infoDiv.append(urlClick);
-
-            //12-takes infoDiv with all its info and puts it onto index
-            $('#article').append(infoDiv);   
+            //8-takes infoAnchor with all its info and puts it onto index
+            $('#article').append(infoAnchor);   
         }
 })
 
