@@ -1,10 +1,8 @@
 //1-this chunk is getting the most recent date
 var articleUnix = new Date();
-console.log(articleUnix + "CHECK ME")
-
 articleUnix = articleUnix.toISOString();
 articleUnix=articleUnix.slice(0,10);
-console.log(articleUnix);
+
 
 
 //2-API URL
@@ -15,7 +13,6 @@ $.ajax({
     url: gameSpotURL,
     method: 'GET'
 }).then(function(response) {
-    console.log(response);
   
     var results = response.results;
         //4-for loop to pull through information from API

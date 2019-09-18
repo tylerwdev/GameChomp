@@ -5,7 +5,7 @@
 
 function pullGameInfo(datacard, data){
   datacard.click(function (){
-console.log(pullGameInfo)
+
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
   var options = { year: 'numeric', month: 'long', day: 'numeric'};
