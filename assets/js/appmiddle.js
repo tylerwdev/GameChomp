@@ -12,7 +12,9 @@ console.log(pullGameInfo)
   var longDate = convertUnixTime.toLocaleDateString("en-US", options );
 
   $(".gameInfo").empty();
-  $(".gameInfo").append(data.total_rating);
+
+  $(".gameInfo").append("Total rating: " +Math.floor(data.total_rating));
+
   $(".gameInfo").append(data.genres[0].name);
   $(".gameInfo").append(data.storyline);
   $(".gameInfo").append(data.summary);
