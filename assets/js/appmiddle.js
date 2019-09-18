@@ -5,16 +5,14 @@
 
 function pullGameInfo(datacard, data){
   datacard.click(function (){
-console.log("I'm clicked!")
+
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
   var options = { year: 'numeric', month: 'long', day: 'numeric'};
   var longDate = convertUnixTime.toLocaleDateString("en-US", options );
 
   $(".gameInfo").empty();
-
   $(".gameInfo").append("Total rating: " +Math.floor(data.total_rating));
-
   $(".gameInfo").append(data.genres[0].name);
   $(".gameInfo").append(data.storyline);
   $(".gameInfo").append(data.summary);
@@ -35,15 +33,6 @@ $(".gameInfo").append(addingGifs);
 displayShowGifs(data.name);
 
 
-
-
-//   console.log(data );
-    // var replaced = data.name.toLowerCase()
-    // replaced = replaced.split(' ').join('-');
-    // var urlWalkthrough = "https://www.ign.com/" + replaced;
-    // $(".walkthrough").html("<h3>" + urlWalkthrough +"</h3");
-  
-    // })
   })
 }
 

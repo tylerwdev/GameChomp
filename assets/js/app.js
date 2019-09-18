@@ -20,7 +20,10 @@ $.ajax({
 
   .then(function (response) {
     response.forEach(element => {
+
+
       getCover(element);
+
   
     });
  
@@ -42,6 +45,19 @@ function getCover(data) {
 
 
 
+
+//THIS IS THE SEARCH BAR FUNCTION -JG //
+
+$( document ).ready(function() {
+
+  $( "div.button" ).click(function() {
+    $( "form.gsc-search-box" ).submit();
+      return false;
+  });
+  
+  
+  });
+
  
 
 // //function to get top ten images and append images and name to page. Also to call the general game information for the middle section.
@@ -54,3 +70,4 @@ function getCover(data) {
 //   $(".containerOneGame").append(image);
 //   $(".containerOneGame").append(data.name);
 //   pullGameInfo(image, data)
+
