@@ -1,15 +1,8 @@
 
 body{
     width: 100%;
-=======
-#article {
-    display: flex;
-    flex-direction: column;
-}
-
     background-color: black;
     background-image: url("../images/background.jpeg");
-   
     color: cyan;
     font-family: 'Share Tech Mono', monospace;
 }
@@ -50,9 +43,29 @@ a:hover {
     }
   }
 
-  .card{
+  .card, .card-title{
       background-color:black;
+      text-align: center;
+      font-size: 18px;
+      width: 150px;
   }
+
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+}
 
  
 

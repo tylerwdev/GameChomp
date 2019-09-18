@@ -3,8 +3,8 @@
 //If I move anything, I'll have to add a new empty method call with it. 
 
 
-function pullGameInfo(image, data){
-  image.click(function (){
+function pullGameInfo(datacard, data){
+  datacard.click(function (){
 console.log(pullGameInfo)
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
@@ -12,9 +12,7 @@ console.log(pullGameInfo)
   var longDate = convertUnixTime.toLocaleDateString("en-US", options );
 
   $(".gameInfo").empty();
-
   $(".gameInfo").append("Total rating: " +Math.floor(data.total_rating));
-
   $(".gameInfo").append(data.genres[0].name);
   $(".gameInfo").append(data.storyline);
   $(".gameInfo").append(data.summary);
