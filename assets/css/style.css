@@ -1,0 +1,71 @@
+
+body{
+    width: 100%;
+=======
+#article {
+    display: flex;
+    flex-direction: column;
+}
+
+    background-color: black;
+    background-image: url("../images/background.jpeg");
+   
+    color: cyan;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
+.jumbotron{
+    background-image: url("../images/background.jpeg");
+    text-align: center;
+     
+   
+}
+
+.btn{
+    color: black;
+}
+
+a{
+    color:cyan;
+    background-color: goldenrod, .5;
+    border-radius: 1em;
+}
+a:hover {
+    color: goldenrod;
+    text-decoration: none;
+  }
+
+
+  
+  @media screen and (min-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 calc(33% - 2rem);
+    }
+  }
+
+  .card{
+      background-color:black;
+  }
+
+ 
+
+/*#article{
+
+text-emphasis: none; 
+text-align: right;
+background-color: rgb(22, 22, 22, .6);
+width: 50%;
+
+}*/
+
+
+
+
+
