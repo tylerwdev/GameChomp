@@ -3,9 +3,9 @@
 //If I move anything, I'll have to add a new empty method call with it. 
 
 
-function pullGameInfo(image, data){
-  image.click(function (){
-console.log(pullGameInfo)
+function pullGameInfo(datacard, data){
+  datacard.click(function (){
+console.log("I'm clicked!")
 // Convert Release Date
   var convertUnixTime = new Date(data.first_release_date*1000) 
   var options = { year: 'numeric', month: 'long', day: 'numeric'};
