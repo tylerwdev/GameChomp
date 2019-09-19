@@ -21,7 +21,6 @@ $.ajax({
   .then(function (response) {
     response.forEach(element => {
 
-
       getCover(element);
 
   
@@ -52,6 +51,7 @@ $( document ).ready(function() {
 
   $( "div.button" ).click(function() {
     $( "form.gsc-search-box" ).submit();
+
       return false;
   });
   
