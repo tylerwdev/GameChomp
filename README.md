@@ -16,3 +16,5 @@ Alex Farris: Lead Back-End Developer & JS Specialist
 Tyler Winters: Gamespot API- News Scraper Specialist & Gitmaster
 Dan Grigg: Wireframe and Design Lead 
 Julia Graves: Project Manager and Front End Development Lead
+
+https://maxdavin.github.io/Project-One/
